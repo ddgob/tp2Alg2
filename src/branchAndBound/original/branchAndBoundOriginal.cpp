@@ -6,6 +6,9 @@
 #include <algorithm>
 #include <fstream>
 #include <sstream>
+#include <filesystem>
+#include <map>
+#include <regex>
 
 double bound(const std::vector<int>& solution, const std::vector<std::vector<double>>& graphAdjacencyMatrix) {
     double totalBound = 0;
@@ -161,4 +164,32 @@ std::vector<std::vector<double>> readTspData(const std::string& tspFilePath) {
     }
 
     return graphAdjacencyMatrix;
+}
+
+std::vector<std::string> extractFolderNamesInDirectory(const std::string& directory) {
+    std::vector<std::string> folderNames;
+    for (const auto& entry : std::filesystem::directory_iterator(directory)) {
+        if (std::filesystem::is_directory(entry)) {
+            folderNames.push_back(entry.path().filename().string());
+        }
+    }
+    return folderNames;
+}
+
+std::map<int, std::string> tspInstanceToNumOfNodesMapper(const std::vector<std::string>& tspInstances) {
+    std::map<int, std::string> mapResult;
+    std::regex pattern("\\d+");
+
+    for (const auto& tspInstance : tspInstances) {
+        std::sregex_iterator currentMatch(tspInstance.begin(), tspInstance.end(), pattern);
+        std::sregex_iterator lastMatch;
+
+        while (currentMatch != lastMatch) {
+            std::smatch match = *currentMatch;
+            mapResult[std::stoi(match.str())] = tspInstance;
+            currentMatch++;
+        }
+    }
+
+    return mapResult;
 }
