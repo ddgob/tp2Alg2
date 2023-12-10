@@ -163,3 +163,7 @@ def runAllInstancesInOrderOfNodes(tspFolderPath, outputFolderPath):
         if numberOfNodesInstance > numberOfNodesLastInstanceExecuted:
             with open(os.path.join(outputFolderPath, tspInstance + ".txt"), "w") as outputFile:
                 runSingleTspInstance(tspInstance, tspFolderPath, outputFile)
+
+tspFolderPath = "./data/tsps"
+outputFolderPath = "./outputs/twiceAroundTheTree"
+runAllInstancesInOrderOfNodes(tspFolderPath, outputFolderPath)
