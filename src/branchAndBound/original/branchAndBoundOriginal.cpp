@@ -9,6 +9,7 @@
 #include <filesystem>
 #include <map>
 #include <regex>
+#include <sys/resource.h>
 
 double bound(const std::vector<int>& solution, const std::vector<std::vector<double>>& graphAdjacencyMatrix) {
     double totalBound = 0;
@@ -192,4 +193,50 @@ std::map<int, std::string> tspInstanceToNumOfNodesMapper(const std::vector<std::
     }
 
     return mapResult;
+}
+
+std::string processTspInstance(const std::string& tspInstance, std::ofstream& outputFile, const std::string& tspFolderPath) {
+    try {
+        std::string tspFilePath = tspFolderPath + "/" + tspInstance + "/" + tspInstance + ".tsp";
+        std::clock_t startReadDataTime = std::clock();
+        std::vector<std::vector<double>> graphAdjacencyMatrix = readTspData(tspFilePath);
+        std::clock_t endReadDataTime = std::clock();
+        
+        double durationReadDataTime = static_cast<double>(endReadDataTime - startReadDataTime) / CLOCKS_PER_SEC;
+        outputFile << "Time taken to read the file: " << durationReadDataTime << " seconds" << std::endl;
+        outputFile << "-----------" << std::endl;
+
+        struct rusage startMemoryUsageInKB, endMemoryUsageInKB;
+        getrusage(RUSAGE_SELF, &startMemoryUsageInKB);
+        std::clock_t startAlgorithmExecuteTime = std::clock();
+        std::tuple<double, std::vector<int>, bool, int> result = TSPBranchAndBoundOriginal(graphAdjacencyMatrix, graphAdjacencyMatrix.size(), 30);
+        std::clock_t endAlgorithmExecuteTime = std::clock();
+        getrusage(RUSAGE_SELF, &endMemoryUsageInKB);
+        double durationAlgorithmExecutionTime = static_cast<double>(endAlgorithmExecuteTime - startAlgorithmExecuteTime) / CLOCKS_PER_SEC;
+        long memoryUsage = endMemoryUsageInKB.ru_maxrss - startMemoryUsageInKB.ru_maxrss;
+        
+        // Write the best cost and solution path to the output file
+        outputFile << "Time taken to execute: " << durationAlgorithmExecutionTime << " seconds" << std::endl;
+        outputFile << "Memory taken to execute: " << memoryUsage << " kilobytes" << std::endl;
+        outputFile << "Best cost: " << std::get<0>(result) << std::endl;
+        outputFile << "Cuts count: " << std::get<3>(result) << std::endl;
+        if (std::get<2>(result)) {
+            outputFile << "Leaf node was reached" << std::endl;
+        } else {
+            outputFile << "Leaf node was NOT reached" << std::endl;
+        }
+        outputFile << "Solution path: ";
+        for (int i : std::get<1>(result)) {
+
+            outputFile << i << " ";
+
+        }
+        outputFile << std::endl;
+
+        return "Successfully processed";
+    }
+    catch (const std::exception& error) {
+        outputFile << "An error occurred: " << error.what() << std::endl;
+        return "!!!!!!!!!!!!!!An error occurred!!!!!!!!!!!!!!";
+    }
 }
