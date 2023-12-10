@@ -1,4 +1,5 @@
 import networkx as nx
+import numpy as np
 
 def TSPTwiceAroundTheTree(graphAdjacencyMatrix):
     
@@ -19,3 +20,27 @@ def TSPTwiceAroundTheTree(graphAdjacencyMatrix):
         best += graphAdjacencyMatrix[sol[i]][sol[i + 1]]
 
     return best, sol
+
+def readTspData(tspFilePath):
+
+    with open(tspFilePath, 'r') as tspFile:
+        coordinates = []
+        for line in tspFile:
+            lineStrip = line.strip()
+            if lineStrip == 'NODE_COORD_SECTION':
+                for line in tspFile:
+                    lineStrip = line.strip()
+                    if lineStrip == 'EOF':
+                        break
+                    nodeID, xCoord, yCoord = lineStrip.split()
+                    coordinates.append((float(xCoord), float(yCoord)))
+                break
+
+    coordinatesArray = np.array(coordinates)
+
+    # Calculate euclidian distance
+    difference = coordinatesArray[:, np.newaxis, :] - coordinatesArray[np.newaxis, :, :]
+    graphAdjacencyMatrix = np.sqrt(np.sum(difference**2, axis=2))
+    np.fill_diagonal(graphAdjacencyMatrix, np.inf)
+
+    return graphAdjacencyMatrix
