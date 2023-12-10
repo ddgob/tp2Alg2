@@ -1,5 +1,7 @@
 import networkx as nx
 import numpy as np
+import os
+import re
 
 def TSPTwiceAroundTheTree(graphAdjacencyMatrix):
     
@@ -44,3 +46,25 @@ def readTspData(tspFilePath):
     np.fill_diagonal(graphAdjacencyMatrix, np.inf)
 
     return graphAdjacencyMatrix
+
+def extractFolderNamesInDirectory(directory):
+    
+    folderNames = []
+    
+    for entry in os.listdir(directory):
+        if os.path.isdir(os.path.join(directory, entry)):
+            folderNames.append(entry)
+
+    return folderNames
+
+def tspInstanceToNumOfNodesMapper(tspInstances):
+    
+    mapResult = {}
+    pattern = re.compile(r"\d+")
+
+    for tspInstance in tspInstances:
+        matches = pattern.findall(tspInstance)
+        for match in matches:
+            mapResult[int(match)] = tspInstance
+
+    return mapResult
