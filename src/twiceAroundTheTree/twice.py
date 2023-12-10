@@ -142,3 +142,24 @@ def processTspInstance(tspInstance, outputFile, tspFolderPath):
     outputFile.write(f"Solution path: {bestSolutionFound}\n")
 
     return "Successfully processed"
+
+def runSingleTspInstance(tspInstance, tspFolderPath, outputFile):
+    
+    print(f"Started folder: {tspInstance} ...")
+
+    outputFile.write(f"--------------------- Folder: {tspInstance} ---------------------\n")
+    processTspInstanceErrorMessage = processTspInstance(tspInstance, outputFile, tspFolderPath)
+    outputFile.write("\n\n\n\n")
+
+    print(f"Finished folder: {tspInstance} --> {processTspInstanceErrorMessage}")
+
+def runAllInstancesInOrderOfNodes(tspFolderPath, outputFolderPath):
+    
+    tspInstances = extractFolderNamesInDirectory(tspFolderPath)
+    mapTspInstancesToNumOfNodes = tspInstanceToNumOfNodesMapper(tspInstances)
+
+    for numberOfNodesInstance, tspInstance in sorted(mapTspInstancesToNumOfNodes.items()):
+        numberOfNodesLastInstanceExecuted = 0
+        if numberOfNodesInstance > numberOfNodesLastInstanceExecuted:
+            with open(os.path.join(outputFolderPath, tspInstance + ".txt"), "w") as outputFile:
+                runSingleTspInstance(tspInstance, tspFolderPath, outputFile)
