@@ -206,6 +206,6 @@ def runAllInstancesInOrderOfNodes(tspFolderPath, outputFolderPath):
             with open(os.path.join(outputFolderPath, tspInstance + ".txt"), "w") as outputFile:
                 runSingleTspInstance(tspInstance, tspFolderPath, outputFile)
 
-tspFolderPath = "./tp2Alg2/data/test"
-outputFolderPath = "./tp2Alg2/outputs/branchAndBound/trivialSolution/python"
+tspFolderPath = "./data/tsps"
+outputFolderPath = "./outputs/branchAndBound/trivialSolution/python"
 runAllInstancesInOrderOfNodes(tspFolderPath, outputFolderPath)

@@ -84,11 +84,23 @@ std::tuple<double, std::vector<int>, bool, int> TSPBranchAndBoundOriginal(const 
     std::priority_queue<Node> queue;
     queue.push(root);
 
-    double best = std::numeric_limits<double>::infinity();
+    double best = 0;
     std::vector<int> sol;
 
     bool leafNodeReached = false;
     int cutsCount = 0;
+
+    // Create a trivial solution: visit vertices in order 0, 1, 2, ..., n-1, 0
+    std::vector<int> trivial_solution;
+    for (int i = 0; i < numNodes; ++i) {
+        sol.push_back(i);
+    }
+    sol.push_back(0);
+
+    // Calculate the cost of the trivial solution
+    for (int i = 0; i < numNodes; ++i) {
+        best += graphAdjacencyMatrix[sol[i]][sol[i + 1]];
+    }
 
     while (!queue.empty()) {
         if ((std::clock() - startTime) / static_cast<double>(CLOCKS_PER_SEC) > timeLimitSeconds) {
@@ -265,7 +277,7 @@ void runAllInstancesInOrderOfNodes(const std::string& tspFolderPath, const std::
 
 int main() {
     std::string tspFolderPath = "./data/tsps";
-    std::string outputFold = "./outputs/branchAndBound/original/c++";
+    std::string outputFold = "./outputs/branchAndBound/trivialSolution/c++";
     runAllInstancesInOrderOfNodes(tspFolderPath, outputFold);
     return 0;
 }
