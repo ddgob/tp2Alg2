@@ -240,3 +240,32 @@ std::string processTspInstance(const std::string& tspInstance, std::ofstream& ou
         return "!!!!!!!!!!!!!!An error occurred!!!!!!!!!!!!!!";
     }
 }
+
+void runSingleTspInstance(const std::string& tspInstance, const std::string& tspFolderPath, std::ofstream& outputFile) {
+    std::cout << "Started folder: " << tspInstance << " ..." << std::endl;
+    outputFile << "--------------------- Folder: " << tspInstance << " ---------------------" << std::endl;
+    std::string processTspInstanceErrorMessage = processTspInstance(tspInstance, outputFile, tspFolderPath);
+    outputFile << "\n\n\n\n" << std::endl;
+    std::cout << "Finished folder: " << tspInstance << " --> " << processTspInstanceErrorMessage << std::endl;
+}
+
+void runAllInstancesInOrderOfNodes(const std::string& tspFolderPath, const std::string& outputFolderPath) {
+    auto tspInstances = extractFolderNamesInDirectory(tspFolderPath);
+    auto mapTspInstancesToNumOfNodes = tspInstanceToNumOfNodesMapper(tspInstances);
+
+    for (const auto& pair : mapTspInstancesToNumOfNodes) {
+        int numberOfNodesLastInstanceExecuted = 0;
+        if (pair.first > numberOfNodesLastInstanceExecuted) {
+            std::string tspInstance = pair.second;
+            std::ofstream outputFile(outputFolderPath + "/" + tspInstance + ".txt");
+            runSingleTspInstance(tspInstance, tspFolderPath, outputFile);
+        }
+    }
+}
+
+int main() {
+    std::string tspFolderPath = "./data/test";
+    std::string outputFold = "./outputs/branchAndBound/original/c++";
+    runAllInstancesInOrderOfNodes(tspFolderPath, outputFold);
+    return 0;
+}
