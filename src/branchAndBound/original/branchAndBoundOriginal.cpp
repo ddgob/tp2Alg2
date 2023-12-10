@@ -4,6 +4,8 @@
 #include <queue>
 #include <iostream>
 #include <algorithm>
+#include <fstream>
+#include <sstream>
 
 double bound(const std::vector<int>& solution, const std::vector<std::vector<double>>& graphAdjacencyMatrix) {
     double totalBound = 0;
@@ -121,4 +123,42 @@ std::tuple<double, std::vector<int>, bool, int> TSPBranchAndBoundOriginal(const 
     }
 
     return std::make_tuple(best, sol, leafNodeReached, cutsCount);
+}
+
+std::vector<std::vector<double>> readTspData(const std::string& tspFilePath) {
+    std::ifstream tspFile(tspFilePath);
+    std::vector<std::vector<double>> graphAdjacencyMatrix;
+
+    if (tspFile.is_open()) {
+        std::vector<std::pair<double, double>> coordinates;
+        std::string line;
+
+        while (std::getline(tspFile, line)) {
+            if (line == "NODE_COORD_SECTION") {
+                while (std::getline(tspFile, line) && line != "EOF") {
+                    std::istringstream iss(line);
+                    double nodeID, xCoord, yCoord;
+                    iss >> nodeID >> xCoord >> yCoord;
+                    coordinates.emplace_back(xCoord, yCoord);
+                }
+                break;
+            }
+        }
+
+        int size = coordinates.size();
+        graphAdjacencyMatrix.resize(size, std::vector<double>(size, 0.0));
+
+        // Calculate euclidian distance
+        for (int i = 0; i < size; ++i) {
+            for (int j = 0; j < size; ++j) {
+                double diffX = coordinates[i].first - coordinates[j].first;
+                double diffY = coordinates[i].second - coordinates[j].second;
+                graphAdjacencyMatrix[i][j] = std::sqrt(diffX * diffX + diffY * diffY);
+            }
+        }
+
+        tspFile.close();
+    }
+
+    return graphAdjacencyMatrix;
 }
