@@ -1,0 +1,33 @@
+1) Para executar o programa para o branch and bound sem solucao trivial em c++ para todas as intancias execute 
+na pasta raiz do projeto os seguintes comandos na linha de comando:
+
+--> g++ ./src/branchAndBound/original/branchAndBoundOriginal.cpp -o branchAndBoundOriginal.exe
+--> ./branchAndBoundOriginal.exe
+
+
+
+2) Para executar o programa para o branch and bound com solucao trivial em c++ para todas as intancias execute 
+na pasta raiz do projeto os seguintes comandos na linha de comando:
+
+--> g++ ./src/branchAndBound/trivialSolution/branchAndBoundTrivialSolution.cpp -o branchAndBoundTrivialSolution.exe
+--> ./branchAndBoundTrivialSolution.exe
+
+
+
+3) Para executar o programa para o branch and bound sem solucao trivial em python para todas as intancias, 
+abra o arquivo ./src/branchAndBound/original/branchAndBoundOriginal.py e aperte o "Run Python File"
+
+
+
+4) Para executar o programa para o branch and bound com solucao trivial em python para todas as intancias,
+abra o arquivo ./src/branchAndBound/trivialSolution/branchAndBoundTrivialSolution.py e aperte o "Run Python File"
+
+
+
+5) Para executar o programa para o twice around the tree para todas as intancias,
+abra o arquivo ./src/twiceAroundTheTree/twiceAroundTheTree.py e aperte o "Run Python File"
+
+
+
+6) Para executar o programa para o christofides para todas as intancias,
+abra o arquivo ./src/christofides/christofides.py e aperte o "Run Python File"
