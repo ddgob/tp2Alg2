@@ -1,0 +1,14 @@
+--------------------- Folder: eil51 ---------------------
+Time taken to read the file: 0.000156 seconds
+-----------
+Time taken to execute: 1800 seconds
+Memory taken to execute: 2536 kilobytes
+Best cost: 1985.4
+Cuts count: 49231427
+Leaf node was reached
+Solution path: 0 39 35 18 34 40 2 41 19 12 20 42 38 6 32 25 44 30 43 27 14 7 9 23 33 24 28 13 29 22 49 17 1 10 37 15 8 48 4 36 16 3 46 11 45 50 5 47 26 31 21 0 
+
+
+
+
+

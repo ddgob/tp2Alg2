@@ -1,0 +1,14 @@
+--------------------- Folder: berlin52 ---------------------
+Time taken to read the file: 0.000168 seconds
+-----------
+Time taken to execute: 1800 seconds
+Memory taken to execute: 64 kilobytes
+Best cost: 35892.9
+Cuts count: 48486508
+Leaf node was reached
+Solution path: 0 51 6 10 1 13 8 12 41 50 16 26 40 46 9 25 7 27 2 11 20 32 29 42 28 18 24 17 3 30 5 22 14 19 4 49 44 31 48 35 34 33 38 39 36 37 23 47 45 15 43 21 0 
+
+
+
+
+

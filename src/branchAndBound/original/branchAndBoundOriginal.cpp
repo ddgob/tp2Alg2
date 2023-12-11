@@ -265,7 +265,7 @@ void runAllInstancesInOrderOfNodes(const std::string& tspFolderPath, const std::
 
 int main() {
     std::string tspFolderPath = "./data/tsps";
-    std::string outputFold = "./outputs/branchAndBound/original/c++";
+    std::string outputFold = "./outputs/BnB_original_cpp";
     runAllInstancesInOrderOfNodes(tspFolderPath, outputFold);
     return 0;
 }

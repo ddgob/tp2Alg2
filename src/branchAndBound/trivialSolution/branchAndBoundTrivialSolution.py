@@ -207,5 +207,5 @@ def runAllInstancesInOrderOfNodes(tspFolderPath, outputFolderPath):
                 runSingleTspInstance(tspInstance, tspFolderPath, outputFile)
 
 tspFolderPath = "./data/tsps"
-outputFolderPath = "./outputs/branchAndBound/trivialSolution/python"
+outputFolderPath = "./outputs/branchAndBound/BnB_trivialSolution_python"
 runAllInstancesInOrderOfNodes(tspFolderPath, outputFolderPath)

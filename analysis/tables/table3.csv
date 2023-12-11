@@ -1,0 +1,192 @@
+   	  index	name    	  numNodes	        time	  memory	            cost	cuts      	leafReached  	algoType
+  0	     90	eil51   	        51	1800        	    2536	  1985.4        	49231427.0	True         	BnB_original_cpp
+  1	    143	eil51   	        51	   0.0631967	      32	   480.875      	N/A       	N/A          	christofides
+  2	    185	eil51   	        51	1800        	    2372	  1313.47       	41336129.0	False        	BnB_trivialSolution_cpp
+  3	     48	eil51   	        51	   0.0151947	      44	   640.901      	N/A       	N/A          	twiceAroundTheTree
+  4	     37	berlin52	        52	   0.0172262	       8	 10116          	N/A       	N/A          	twiceAroundTheTree
+  5	     81	berlin52	        52	1800        	      64	 35892.9        	48486508.0	True         	BnB_original_cpp
+  6	    132	berlin52	        52	   0.0448122	      12	  8594.03       	N/A       	N/A          	christofides
+  7	    176	berlin52	        52	1800        	     100	 22205.6        	35044070.0	False        	BnB_trivialSolution_cpp
+  8	    123	st70    	        70	   0.0865834	      16	   756.706      	N/A       	N/A          	christofides
+  9	    169	st70    	        70	1800        	       0	  3410.56       	26743744.0	False        	BnB_trivialSolution_cpp
+ 10	     28	st70    	        70	   0.022615 	      40	   873.351      	N/A       	N/A          	twiceAroundTheTree
+ 11	     74	st70    	        70	1800        	      72	  4886.04       	29889528.0	True         	BnB_original_cpp
+ 12	    129	eil76   	        76	   0.115578 	      28	   623.058      	N/A       	N/A          	christofides
+ 13	     34	eil76   	        76	   0.0303791	      28	   707.153      	N/A       	N/A          	twiceAroundTheTree
+ 14	    174	eil76   	        76	1800        	       0	  1974.71       	20907317.0	False        	BnB_trivialSolution_cpp
+ 15	     79	eil76   	        76	1800        	     260	  3381.2        	27578662.0	True         	BnB_original_cpp
+ 16	     49	rat99   	        99	   0.0361321	      88	  1723.23       	N/A       	N/A          	twiceAroundTheTree
+ 17	    186	rat99   	        99	1800.01     	       0	  2130.06       	7783735.0 	False        	BnB_trivialSolution_cpp
+ 18	    144	rat99   	        99	   0.125609 	      88	  1367.43       	N/A       	N/A          	christofides
+ 19	     91	rat99   	        99	1800        	     212	 11889.1        	8538604.0 	True         	BnB_original_cpp
+ 20	    104	kroE100 	       100	   0.210395 	      20	 23782.6        	N/A       	N/A          	christofides
+ 21	    159	kroE100 	       100	1800        	     524	188350          	13653071.0	False        	BnB_trivialSolution_cpp
+ 22	     64	kroE100 	       100	1800        	     524	245717          	15056717.0	True         	BnB_original_cpp
+ 23	      8	kroE100 	       100	   0.0371542	      20	 30507.4        	N/A       	N/A          	twiceAroundTheTree
+ 24	     29	eil101  	       101	   0.0373328	      20	   830.542      	N/A       	N/A          	twiceAroundTheTree
+ 25	    170	eil101  	       101	1800.01     	     164	  2064.49       	9188967.0 	False        	BnB_trivialSolution_cpp
+ 26	    124	eil101  	       101	   0.230544 	      20	   722.997      	N/A       	N/A          	christofides
+ 27	     75	eil101  	       101	1800        	       0	  4638.15       	19534511.0	True         	BnB_original_cpp
+ 28	    142	lin105  	       105	   0.138344 	      44	 16323.7        	N/A       	N/A          	christofides
+ 29	     47	lin105  	       105	   0.0404594	      44	 19498.4        	N/A       	N/A          	twiceAroundTheTree
+ 30	     89	lin105  	       105	1800        	       0	174110          	538997.0  	True         	BnB_original_cpp
+ 31	    184	lin105  	       105	1800.02     	       0	 36478.2        	6502192.0 	False        	BnB_trivialSolution_cpp
+ 32	    156	pr107   	       107	1800.02     	       0	 62757          	6602634.0 	False        	BnB_trivialSolution_cpp
+ 33	    101	pr107   	       107	   0.112743 	      24	 47894.2        	N/A       	N/A          	christofides
+ 34	      5	pr107   	       107	   0.0382001	      24	 54238          	N/A       	N/A          	twiceAroundTheTree
+ 35	     61	pr107   	       107	1800        	     156	854277          	12592633.0	True         	BnB_original_cpp
+ 36	    177	pr124   	       124	1800.01     	       0	 98943.5        	5099776.0 	False        	BnB_trivialSolution_cpp
+ 37	     82	pr124   	       124	1800        	     264	978902          	11688037.0	True         	BnB_original_cpp
+ 38	    133	pr124   	       124	   0.140433 	      88	 64437.7        	N/A       	N/A          	christofides
+ 39	     38	pr124   	       124	   0.0726898	     100	 74141          	N/A       	N/A          	twiceAroundTheTree
+ 40	     13	bier127 	       127	   0.0799227	      36	158638          	N/A       	N/A          	twiceAroundTheTree
+ 41	    108	bier127 	       127	   0.368718 	      36	132456          	N/A       	N/A          	christofides
+ 42	    162	bier127 	       127	1800.01     	       0	393998          	5417489.0 	False        	BnB_trivialSolution_cpp
+ 43	     67	bier127 	       127	1800        	     264	812208          	13070236.0	True         	BnB_original_cpp
+ 44	    114	ch130   	       130	   0.237847 	      40	  6752.28       	N/A       	N/A          	christofides
+ 45	    164	ch130   	       130	1800        	     388	 47800.8        	7750306.0 	False        	BnB_trivialSolution_cpp
+ 46	     19	ch130   	       130	   0.0780854	      40	  8128.76       	N/A       	N/A          	twiceAroundTheTree
+ 47	     69	ch130   	       130	1800        	     792	 64661.6        	11536715.0	True         	BnB_original_cpp
+ 48	     78	pr136   	       136	1800        	     188	     1.19252e+06	10505835.0	True         	BnB_original_cpp
+ 49	    127	pr136   	       136	   0.106613 	      64	103478          	N/A       	N/A          	christofides
+ 50	     32	pr136   	       136	   0.0877323	      64	151914          	N/A       	N/A          	twiceAroundTheTree
+ 51	    173	pr136   	       136	1800.02     	       0	287026          	4037778.0 	False        	BnB_trivialSolution_cpp
+ 52	      6	pr144   	       144	   0.0974739	      12	 80596.3        	N/A       	N/A          	twiceAroundTheTree
+ 53	    102	pr144   	       144	   0.113753 	      20	 70405.3        	N/A       	N/A          	christofides
+ 54	    157	pr144   	       144	1800        	       0	 93523.5        	3597131.0 	False        	BnB_trivialSolution_cpp
+ 55	     62	pr144   	       144	1800        	       0	     1.1465e+06 	6419432.0 	True         	BnB_original_cpp
+ 56	    182	kroB150 	       150	1800.01     	     992	273236          	5916309.0 	False        	BnB_trivialSolution_cpp
+ 57	    139	kroB150 	       150	   0.553817 	      72	 30054.4        	N/A       	N/A          	christofides
+ 58	     87	kroB150 	       150	1800        	     624	374050          	8360601.0 	True         	BnB_original_cpp
+ 59	     44	kroB150 	       150	   0.08881  	      64	 36154.7        	N/A       	N/A          	twiceAroundTheTree
+ 60	    188	pr152   	       152	1800.04     	       0	160980          	3166609.0 	False        	BnB_trivialSolution_cpp
+ 61	     57	pr152   	       152	   0.0902002	      32	 87998.7        	N/A       	N/A          	twiceAroundTheTree
+ 62	     93	pr152   	       152	1800        	       0	     1.46549e+06	410980.0  	True         	BnB_original_cpp
+ 63	    152	pr152   	       152	   0.116607 	      32	 79314.4        	N/A       	N/A          	christofides
+ 64	    153	u159    	       159	   0.311098 	      88	 47581.7        	N/A       	N/A          	christofides
+ 65	     94	u159    	       159	1800        	     260	648742          	3669127.0 	True         	BnB_original_cpp
+ 66	     58	u159    	       159	   0.0978475	      96	 57788          	N/A       	N/A          	twiceAroundTheTree
+ 67	    189	u159    	       159	1800.09     	       0	 43375.7        	3120551.0 	False        	BnB_trivialSolution_cpp
+ 68	    175	rat195  	       195	1800.09     	       0	  4037.53       	1908708.0 	False        	BnB_trivialSolution_cpp
+ 69	     36	rat195  	       195	   0.134273 	      52	  3317.72       	N/A       	N/A          	twiceAroundTheTree
+ 70	     80	rat195  	       195	1800        	    2376	 32963.1        	442396.0  	True         	BnB_original_cpp
+ 71	    131	rat195  	       195	   0.567021 	      52	  2648.1        	N/A       	N/A          	christofides
+ 72	     22	d198    	       198	   0.126509 	       8	 19218.4        	N/A       	N/A          	twiceAroundTheTree
+ 73	    167	d198    	       198	1800.03     	       0	 22514.1        	1996822.0 	False        	BnB_trivialSolution_cpp
+ 74	     72	d198    	       198	1800        	    1348	254891          	0.0       	True         	BnB_original_cpp
+ 75	    117	d198    	       198	   0.686281 	       8	 17316.4        	N/A       	N/A          	christofides
+ 76	    154	kroB200 	       200	   0.796528 	      60	 33026.9        	N/A       	N/A          	christofides
+ 77	     95	kroB200 	       200	1800        	     256	482447          	3387760.0 	True         	BnB_original_cpp
+ 78	    190	kroB200 	       200	1800.05     	    1480	327452          	2954831.0 	False        	BnB_trivialSolution_cpp
+ 79	     59	kroB200 	       200	   0.125195 	      60	 40711          	N/A       	N/A          	twiceAroundTheTree
+ 80	    145	ts225   	       225	   0.195907 	       8	133282          	N/A       	N/A          	christofides
+ 81	    187	ts225   	       225	1800.04     	       0	276532          	2324898.0 	False        	BnB_trivialSolution_cpp
+ 82	     50	ts225   	       225	   0.157756 	       8	188010          	N/A       	N/A          	twiceAroundTheTree
+ 83	     92	ts225   	       225	1800        	    1940	     2.30074e+06	31366.0   	True         	BnB_original_cpp
+ 84	    168	pr226   	       226	1800.21     	       0	110416          	1495905.0 	False        	BnB_trivialSolution_cpp
+ 85	     73	pr226   	       226	1800        	    1052	     2.48659e+06	2184810.0 	True         	BnB_original_cpp
+ 86	     25	pr226   	       226	   0.156265 	     148	116692          	N/A       	N/A          	twiceAroundTheTree
+ 87	    120	pr226   	       226	   0.619592 	     148	 92425.8        	N/A       	N/A          	christofides
+ 88	    105	gil262  	       262	   1.66692  	       8	  2695.15       	N/A       	N/A          	christofides
+ 89	    160	gil262  	       262	1800.03     	    4484	 26295.6        	1812713.0 	False        	BnB_trivialSolution_cpp
+ 90	     65	gil262  	       262	1800.01     	    4948	 38428.7        	5155.0    	True         	BnB_original_cpp
+ 91	      9	gil262  	       262	   0.279237 	       8	  3358.15       	N/A       	N/A          	twiceAroundTheTree
+ 92	    113	pr264   	       264	   0.580904 	      28	 54663.6        	N/A       	N/A          	christofides
+ 93	     18	pr264   	       264	   0.1987   	      32	 66466.8        	N/A       	N/A          	twiceAroundTheTree
+ 94	    163	pr264   	       264	1800.27     	       0	 77976.2        	1080030.0 	False        	BnB_trivialSolution_cpp
+ 95	     68	pr264   	       264	1800.01     	    2080	     1.76234e+06	2558593.0 	True         	BnB_original_cpp
+ 96	      7	a280    	       280	   0.243292 	       8	  3629.72       	N/A       	N/A          	twiceAroundTheTree
+ 97	    158	a280    	       280	1800.1      	       0	  2818.62       	987893.0  	False        	BnB_trivialSolution_cpp
+ 98	     63	a280    	       280	1800.01     	   16636	 49849.5        	871938.0  	True         	BnB_original_cpp
+ 99	    103	a280    	       280	   1.28878  	       8	  2975.11       	N/A       	N/A          	christofides
+100	     70	pr299   	       299	1800.01     	    2896	     1.1163e+06 	0.0       	True         	BnB_original_cpp
+101	     20	pr299   	       299	   0.273802 	       8	 64646          	N/A       	N/A          	twiceAroundTheTree
+102	    115	pr299   	       299	   1.74725  	       8	 52968.2        	N/A       	N/A          	christofides
+103	    165	pr299   	       299	1800.37     	       0	 83507.8        	850770.0  	False        	BnB_trivialSolution_cpp
+104	     77	linhp318	       318	1800.01     	    4676	848066          	0.0       	True         	BnB_original_cpp
+105	     31	linhp318	       318	   0.289115 	      12	 58145.4        	N/A       	N/A          	twiceAroundTheTree
+106	    126	linhp318	       318	   2.25689  	       8	 47259.8        	N/A       	N/A          	christofides
+107	    172	linhp318	       318	1800.41     	       0	119867          	761721.0  	False        	BnB_trivialSolution_cpp
+108	    166	rd400   	       400	1800.19     	   20136	215564          	745176.0  	False        	BnB_trivialSolution_cpp
+109	     21	rd400   	       400	   0.500399 	       8	 20250.4        	N/A       	N/A          	twiceAroundTheTree
+110	    116	rd400   	       400	   6.73161  	       8	 17538.6        	N/A       	N/A          	christofides
+111	     71	rd400   	       400	1800.02     	   24408	307417          	1594407.0 	True         	BnB_original_cpp
+112	    180	fl417   	       417	1800.04     	       0	 55387.2        	443695.0  	False        	BnB_trivialSolution_cpp
+113	    136	fl417   	       417	   2.68058  	       8	 13424.7        	N/A       	N/A          	christofides
+114	     85	fl417   	       417	1800.02     	    6256	772186          	1024626.0 	True         	BnB_original_cpp
+115	     41	fl417   	       417	   0.529507 	       8	 16297.2        	N/A       	N/A          	twiceAroundTheTree
+116	     76	pr439   	       439	1800.02     	    8188	     2.60497e+06	0.0       	True         	BnB_original_cpp
+117	    171	pr439   	       439	1800.91     	       0	270652          	381911.0  	False        	BnB_trivialSolution_cpp
+118	     30	pr439   	       439	   0.579148 	      12	144624          	N/A       	N/A          	twiceAroundTheTree
+119	    125	pr439   	       439	   2.83625  	       8	119532          	N/A       	N/A          	christofides
+120	    135	pcb442  	       442	   5.22     	     216	 54824          	N/A       	N/A          	christofides
+121	    179	pcb442  	       442	1801.11     	       0	221436          	429083.0  	False        	BnB_trivialSolution_cpp
+122	     40	pcb442  	       442	   0.598215 	     220	 69364.9        	N/A       	N/A          	twiceAroundTheTree
+123	     84	pcb442  	       442	1800.02     	    1180	     1.11832e+06	0.0       	True         	BnB_original_cpp
+124	    155	d493    	       493	1801.85     	       0	113552          	296999.0  	False        	BnB_trivialSolution_cpp
+125	      0	d493    	       493	   0.799885 	       8	 45427.1        	N/A       	N/A          	twiceAroundTheTree
+126	     60	d493    	       493	1800.03     	   22356	606132          	0.0       	True         	BnB_original_cpp
+127	     96	d493    	       493	   8.74822  	       8	 38393.6        	N/A       	N/A          	christofides
+128	    178	u574    	       574	1802.8      	       0	 40219.4        	232127.0  	False        	BnB_trivialSolution_cpp
+129	     39	u574    	       574	   0.938042 	       8	 49083.2        	N/A       	N/A          	twiceAroundTheTree
+130	     83	u574    	       574	1800.04     	   48152	989861          	0.0       	True         	BnB_original_cpp
+131	    134	u574    	       574	  14.2861   	       8	 41337.6        	N/A       	N/A          	christofides
+132	     42	rat575  	       575	   0.961944 	     188	  9438.93       	N/A       	N/A          	twiceAroundTheTree
+133	     86	rat575  	       575	1800.04     	    3012	166671          	0.0       	True         	BnB_original_cpp
+134	    137	rat575  	       575	  15.8402   	     220	  7802.75       	N/A       	N/A          	christofides
+135	    181	rat575  	       575	1801.1      	       0	 12952.2        	205932.0  	False        	BnB_trivialSolution_cpp
+136	     10	p654    	       654	   1.23199  	       8	 49731.9        	N/A       	N/A          	twiceAroundTheTree
+137	     66	p654    	       654	1800.06     	   60464	     3.24687e+06	6923.0    	True         	BnB_original_cpp
+138	    161	p654    	       654	1803.69     	       0	107781          	182821.0  	False        	BnB_trivialSolution_cpp
+139	    106	p654    	       654	   2.69827  	      12	 39244.7        	N/A       	N/A          	christofides
+140	    183	d657    	       657	1800.28     	       0	232140          	140919.0  	False        	BnB_trivialSolution_cpp
+141	     88	d657    	       657	1800.05     	    4180	     1.23547e+06	0.0       	True         	BnB_original_cpp
+142	     45	d657    	       657	   1.37531  	     216	 65730.2        	N/A       	N/A          	twiceAroundTheTree
+143	    140	d657    	       657	  20.6387   	      20	 54738.3        	N/A       	N/A          	christofides
+144	    110	u724    	       724	  26.9393   	       8	 47954.7        	N/A       	N/A          	christofides
+145	     15	u724    	       724	   1.55493  	      12	 57779.7        	N/A       	N/A          	twiceAroundTheTree
+146	    119	rat783  	       783	  39.2186   	       8	 10102.9        	N/A       	N/A          	christofides
+147	     24	rat783  	       783	   1.8896   	       8	 12054.5        	N/A       	N/A          	twiceAroundTheTree
+148	      3	pr1002  	      1002	   3.27621  	       8	342244          	N/A       	N/A          	twiceAroundTheTree
+149	     99	pr1002  	      1002	  60.2344   	       8	286233          	N/A       	N/A          	christofides
+150	     54	u1060   	      1060	   3.62921  	       8	302915          	N/A       	N/A          	twiceAroundTheTree
+151	    149	u1060   	      1060	  81.8372   	       8	249109          	N/A       	N/A          	christofides
+152	    109	vm1084  	      1084	  42.6716   	       8	260833          	N/A       	N/A          	christofides
+153	     14	vm1084  	      1084	   3.91196  	       8	315268          	N/A       	N/A          	twiceAroundTheTree
+154	    148	pcb1173 	      1173	  75.7227   	       8	 63392.4        	N/A       	N/A          	christofides
+155	     53	pcb1173 	      1173	   4.64796  	       8	 80694.9        	N/A       	N/A          	twiceAroundTheTree
+156	     23	d1291   	      1291	   5.70363  	      12	 74658.3        	N/A       	N/A          	twiceAroundTheTree
+157	    118	d1291   	      1291	  21.4261   	       8	 57930.4        	N/A       	N/A          	christofides
+158	     43	rl1304  	      1304	   6.01807  	       8	347783          	N/A       	N/A          	twiceAroundTheTree
+159	    138	rl1304  	      1304	  21.8387   	       8	278319          	N/A       	N/A          	christofides
+160	      2	rl1323  	      1323	   6.20446  	       8	380422          	N/A       	N/A          	twiceAroundTheTree
+161	     98	rl1323  	      1323	  22.3891   	       8	298262          	N/A       	N/A          	christofides
+162	    112	nrw1379 	      1379	 273.344    	     244	 63845.1        	N/A       	N/A          	christofides
+163	     17	nrw1379 	      1379	   6.88694  	       8	 79156.3        	N/A       	N/A          	twiceAroundTheTree
+164	      4	fl1400  	      1400	   6.625    	       8	 27915.5        	N/A       	N/A          	twiceAroundTheTree
+165	    100	fl1400  	      1400	 250.629    	       8	 22834.4        	N/A       	N/A          	christofides
+166	     56	u1432   	      1432	   6.70892  	       8	214431          	N/A       	N/A          	twiceAroundTheTree
+167	    151	u1432   	      1432	  82.53     	       8	171558          	N/A       	N/A          	christofides
+168	     52	fl1577  	      1577	   8.57868  	       8	 31223.1        	N/A       	N/A          	twiceAroundTheTree
+169	    147	fl1577  	      1577	  54.2723   	       8	 24515.9        	N/A       	N/A          	christofides
+170	     97	d1655   	      1655	 103.873    	       8	 70542.3        	N/A       	N/A          	christofides
+171	      1	d1655   	      1655	  10.2416   	       8	 85681.1        	N/A       	N/A          	twiceAroundTheTree
+172	    150	vm1748  	      1748	 158.158    	       8	376241          	N/A       	N/A          	christofides
+173	     55	vm1748  	      1748	  11.6665   	       8	444659          	N/A       	N/A          	twiceAroundTheTree
+174	     26	u1817   	      1817	  12.5138   	       8	 83501.6        	N/A       	N/A          	twiceAroundTheTree
+175	    121	u1817   	      1817	 118.784    	       8	 66796.3        	N/A       	N/A          	christofides
+176	    128	rl1889  	      1889	  67.9789   	       8	344566          	N/A       	N/A          	christofides
+177	     33	rl1889  	      1889	  14.3631   	       8	449811          	N/A       	N/A          	twiceAroundTheTree
+178	     46	d2103   	      2103	  17.4234   	       8	124534          	N/A       	N/A          	twiceAroundTheTree
+179	    141	d2103   	      2103	  21.5708   	       8	 84509.8        	N/A       	N/A          	christofides
+180	     11	u2152   	      2152	  18.4191   	       8	 95076.2        	N/A       	N/A          	twiceAroundTheTree
+181	    107	u2152   	      2152	 175.019    	       8	 73896          	N/A       	N/A          	christofides
+182	     27	u2319   	      2319	  20.7369   	       8	320533          	N/A       	N/A          	twiceAroundTheTree
+183	    122	u2319   	      2319	 661.24     	       8	272543          	N/A       	N/A          	christofides
+184	     35	pr2392  	      2392	  24.1067   	       8	523133          	N/A       	N/A          	twiceAroundTheTree
+185	    130	pr2392  	      2392	 594.598    	       8	425980          	N/A       	N/A          	christofides
+186	     16	pcb3038 	      3038	  42.676    	       8	196574          	N/A       	N/A          	twiceAroundTheTree
+187	    111	pcb3038 	      3038	1315.73     	       8	154218          	N/A       	N/A          	christofides
+188	    146	fl3795  	      3795	1230.28     	       8	 31490.6        	N/A       	N/A          	christofides
+189	     51	fl3795  	      3795	  64.0469   	   -1012	 39072.8        	N/A       	N/A          	twiceAroundTheTree
+190	     12	fnl4461 	      4461	 168.387    	     144	254672          	N/A       	N/A          	twiceAroundTheTree

@@ -201,5 +201,5 @@ def runAllInstancesInOrderOfNodes(tspFolderPath, outputFolderPath):
                 runSingleTspInstance(tspInstance, tspFolderPath, outputFile)
 
 tspFolderPath = "./data/tsps"
-outputFolderPath = "./outputs/branchAndBound/original/python"
+outputFolderPath = "./outputs/BnB_original_python"
 runAllInstancesInOrderOfNodes(tspFolderPath, outputFolderPath)

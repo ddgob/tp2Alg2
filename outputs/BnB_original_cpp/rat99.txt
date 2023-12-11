@@ -1,0 +1,14 @@
+--------------------- Folder: rat99 ---------------------
+Time taken to read the file: 0.000507 seconds
+-----------
+Time taken to execute: 1800 seconds
+Memory taken to execute: 212 kilobytes
+Best cost: 11889.1
+Cuts count: 8538604
+Leaf node was reached
+Solution path: 0 97 1 91 7 90 6 93 4 95 3 98 9 96 2 92 8 81 5 94 11 89 10 88 13 82 17 85 12 86 14 83 16 84 15 87 19 78 18 80 21 72 26 75 22 76 24 74 23 73 25 77 20 79 27 71 36 70 29 69 28 68 34 63 35 64 43 65 33 67 30 66 32 54 53 45 62 37 61 31 55 44 46 52 38 60 42 56 39 47 49 48 57 58 59 50 51 41 40 0 
+
+
+
+
+

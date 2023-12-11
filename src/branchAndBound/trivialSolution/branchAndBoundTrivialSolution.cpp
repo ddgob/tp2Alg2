@@ -277,7 +277,7 @@ void runAllInstancesInOrderOfNodes(const std::string& tspFolderPath, const std::
 
 int main() {
     std::string tspFolderPath = "./data/tsps";
-    std::string outputFold = "./outputs/branchAndBound/trivialSolution/c++";
+    std::string outputFold = "./outputs/BnB_trivialSolution_cpp";
     runAllInstancesInOrderOfNodes(tspFolderPath, outputFold);
     return 0;
 }

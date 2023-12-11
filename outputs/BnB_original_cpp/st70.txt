@@ -1,0 +1,14 @@
+--------------------- Folder: st70 ---------------------
+Time taken to read the file: 0.000273 seconds
+-----------
+Time taken to execute: 1800 seconds
+Memory taken to execute: 72 kilobytes
+Best cost: 4886.04
+Cuts count: 29889528
+Leaf node was reached
+Solution path: 0 24 69 44 34 38 28 45 12 39 30 26 35 19 63 54 10 48 47 25 64 7 66 14 61 23 53 18 55 27 50 29 15 13 68 60 58 8 22 43 37 67 46 2 36 31 57 6 32 56 33 62 20 21 11 1 51 59 16 42 40 5 41 17 3 65 52 4 9 49 0 
+
+
+
+
+

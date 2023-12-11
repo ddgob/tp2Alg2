@@ -1,0 +1,14 @@
+--------------------- Folder: eil76 ---------------------
+Time taken to read the file: 0.000287 seconds
+-----------
+Time taken to execute: 1800 seconds
+Memory taken to execute: 260 kilobytes
+Best cost: 3381.2
+Cuts count: 27578662
+Leaf node was reached
+Solution path: 0 65 63 58 40 10 41 64 59 54 69 24 70 30 68 17 19 49 36 23 53 55 13 42 37 60 9 35 8 46 38 20 71 21 52 22 18 48 56 31 14 43 4 57 27 34 62 12 2 28 39 47 11 61 7 72 6 32 51 15 26 50 3 75 74 67 5 16 25 66 45 33 44 29 73 1 0 
+
+
+
+
+

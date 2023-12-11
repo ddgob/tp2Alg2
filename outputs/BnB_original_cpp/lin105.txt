@@ -1,0 +1,14 @@
+--------------------- Folder: lin105 ---------------------
+Time taken to read the file: 0.000587 seconds
+-----------
+Time taken to execute: 1800 seconds
+Memory taken to execute: 0 kilobytes
+Best cost: 174110
+Cuts count: 538997
+Leaf node was reached
+Solution path: 0 99 1 101 3 100 4 96 5 94 6 93 9 98 2 95 12 91 8 97 10 87 14 90 7 92 13 84 11 86 20 89 102 88 21 85 16 82 15 81 17 83 24 77 18 78 19 80 28 64 22 74 23 79 27 75 25 76 26 73 29 65 30 69 31 72 33 70 34 67 37 66 32 71 38 63 36 68 35 60 39 59 48 62 103 61 44 41 58 40 104 42 55 45 54 49 47 50 53 56 57 52 51 46 43 0 
+
+
+
+
+
